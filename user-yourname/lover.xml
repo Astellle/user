@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<element>
+<elements>
 	<info>
 		<name>Lover</name>
 		<update version="1.0.0">
@@ -118,5 +118,5 @@
 		<sheet alt="Curse of Attraction" />
     </element> 
       
-</element>
+</elements>
 
