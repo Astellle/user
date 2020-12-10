@@ -6,7 +6,111 @@
 			<file name="lover.xml" url="https://raw.githubusercontent.com/yourgithubaccount/Astellle/master/user-yourname/lover.xml" />
 		</update>
 	</info>
-	
-	<!-- place your elements here -->
-	
+    <element name="Lover" type="Background" source="5e Backgrounds Homebrew" id="ID_HOME_BACKGROUND_LOVER">
+        <description>
+            <p>You've always had a special kind of charm on people. For some reason, people see you as an ideal candidate for an evening of fun, or a lifelong partner. This ... skill ? ... gave you a rather strange point of view on life.</p>
+            <p class="indent">  It might be a good idea to see with your DM the list of cities and towns in which you have lovers and determine who these lovers are beforehand for a more smooth introduction of their characters in the game.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong> Persuation and Performance</li>
+				<li><strong>Tool Proficiencies:</strong> Thieves tools or Herbalist's pack or Disguise kit</li>
+				<li><strong>Languages:</strong> Two standard languages of your choice.</li>
+				<li><strong>Equipment:</strong> a set of elegant clothes, a set of traveller's clothes, a grooming kit including a block of soap, a belt pouch with 20 gp.</li>
+			</ul>
+            <div element="ID_HOME_BACKGROUND_LOVER_FEATURE_LOVER_IN_EVERY_CITY" />
+            <div element="ID_HOME_BACKGROUND_LOVER_FEATURE_CURSE_OF_ATTRACTION" />
+            <h5>SUGGESTED CHARACTERISTICS</h5>
+        <setters>
+          <set name="short">Persuation, Performance, Thieves tools/Herbalist's pack/Disguise kit, Languages</set>
+        </setters>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+            <select type="Proficiency" name="Tool Proficiency (Lover)" supports="ID_PROFICIENCY_TOOL_THIEVES_TOOLS|ID_PROFICIENCY_TOOL_HERBALISM_KIT|ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" />
+            <select type="Language" name="Language (Lover)" supports="Standard" />
+            <select type="Language" name="Language (Lover)" supports="Standard" />
+            <select type="Background Feature" id="ID_HOME_BACKGROUND_LOVER_FEATURE_LOVER_IN_EVERY_CITY|ID_HOME_BACKGROUND_LOVER_FEATURE_CURSE_OF_ATTRACTION" />
+      <select name="Personality Trait" type="List" number="2">
+        <item id="1">Things come easy to me, so isn't it natural if I'm a bit laid back?</item>
+        <item id="2">It's all a game, right?</item>
+        <item id="3">I have a strange quirk that people remember me by.</item>
+        <item id="4">I always try to find the most peaceful resolution to disputes.</item>
+        <item id="5">It doesn't matter who it is, I'm getting in their pants !</item>
+        <item id="6">I find people fascinating and always try to know as much as possible of any person I meet.</item>
+        <item id="7">I have a commemorative trinket from every lover I've had.</item>
+        <item id="8">Life is ephemeral, I mean to live it to the fullest.</item>
+      </select>
+      <select name="Ideal" type="List">
+        <item id="1">Family. One day, I'll find the one and settle down. (Lawful)</item>
+        <item id="2">Love. I'm searching for true love but can't seem to find it. (Good)</item>
+        <item id="3">Domination. My lovers are mine and always will be. (Evil)</item>
+        <item id="4">Joy. Giving joy to others is my reason for living. (Good)</item>
+        <item id="5">Selfish. Ha ! More for me, less for you ! (Neutral)</item>
+        <item id="6">Freedom. I can't help it, I just don't want to be tied down. (Chaotic)</item>
+      </select>
+      <select name="Bond" type="List">
+        <item id="1">Some of my lovers really love me and want to be with me forever, I have mixed feelings about this.</item>
+        <item id="2">I'm indebted to a person, I hope to repay them one day.</item>
+        <item id="3">Someone murdered one of my lovers to get to me and I'll never forgive them.</item>
+        <item id="4">An angry husband murdered his wife after discovering me in her bed, I'll never forget this trauma or forgive myself.</item>
+        <item id="5">Every lover gives me something very precious, I feel I owe them something.</item>
+        <item id="6">I'm actually really, deeply in love with one of my lovers.</item>
+      </select>
+      <select name="Flaw" type="List">
+        <item id="1">I'm more than lazy.</item>
+        <item id="2">I don't care about hurting people's feelings.</item>
+        <item id="3">I'm strangely possessive of my new lovers.</item>
+        <item id="4">I'm actually a stalker.</item>
+        <item id="5">I don't feel guilt, I don't feel much of anything actually.</item>
+        <item id="6">I'm addicted to a substance or a behaviour or a person</item>
+      </select>
+        </rules>
+    </element>
+    <element name="Feature: Lover In Every City" type="Background Feature" source="5e Backgrounds Homebrew" id="ID_HOME_BACKGROUND_LOVER_FEATURE_LOVER_IN_EVERY_CITY">
+		<supports>Background Feature</supports>
+        <description>
+            <p>People of your preferred sex (or not!) seem to be constantly attracted to you romantically or sexually. Because of this, you may end up in strange, potentially troublesome situations. In every place humanoids gather, you will be accosted at least once per week you remain there by an NPC looking to become your lover. This interest can be purely physical or romantic. The NPC can already be engaged/married or not. They might be honest with you or not. Enjoy the best curse in the world !</p>
+            <ul>
+                <li>Wretched</li>         
+                <li>Squalid</li>
+                <li>Poor</li>
+                <li>Modest</li>
+                <li>Comfortable</li>         
+                <li>Wealthy</li>
+                <li>Aristocratic</li>
+            </ul>
+        </description>
+        <sheet alt="Lover's Social Status/Lifestyle" />
+            <ul>
+                <li>Kind/Gentle</li>         
+                <li>Adventurous/Curious</li>
+                <li>Timid/Reserved</li>
+                <li>Intellectual/Patient</li>
+                <li>Snob/Arogant</li>         
+                <li>Prideful/Honorable</li>
+                <li>Jealous/Possessive</li>
+                <li>Graceful/Noble Heart</li>
+            </ul>
+        </description>
+        <sheet alt="Lover's Base Personality" />
+    </element>
+    </element>
+    <element name="Feature: Curse of Attraction" type="Background Feature" source="Varient Feature" id="ID_HOME_BACKGROUND_LOVER_FEATURE_CURSE_OF_ATTRACTION">
+		<supports>Background Feature</supports>
+        <description>
+            <p>People of your preferred sex (or not!) seem to be constantly attracted to you romantically or sexually. Because of this, you may end up in strange, potentially troublesome situations. In every place humanoids gather, you will be accosted at least once per week you remain there by an NPC looking to become your lover. This interest can be purely physical or romantic. The NPC can already be engaged/married or not. They might be honest with you or not. Enjoy the best curse in the world !</p>
+            <ul>
+                <li>Lawful good</li>         
+                <li>Neutral good</li>
+                <li>Chaotic good</li>
+                <li>Lawful neutral</li>
+                <li>Neutral</li>
+                <li>Lawful neutral</li>
+                <li>Chaotic neutral</li>
+                <li>Lawful evil</li>
+                <li>Neutral evil</li>
+                <li>Chaotic evil</li>
+            </ul>
+        </description>
+        <sheet alt="Curse of Attraction" />
+    </element>
 </elements>
