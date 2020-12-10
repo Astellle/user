@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<elements>
+<element>
 	<info>
 		<name>Lover</name>
 		<update version="1.0.0">
@@ -101,9 +101,9 @@
 	    <element name="Feature: Curse of Attraction" type="Background Feature" source="Varient Feature" id="ID_HOME_BACKGROUND_LOVER_FEATURE_CURSE_OF_ATTRACTION">
 			<supports>Background Feature</supports>
 		<description>
-		    <p>People of your preferred sex (or not!) seem to be constantly attracted to you romantically or sexually. Because of this, you may end up in strange, potentially troublesome situations. In every place humanoids gather, you will be accosted at least once per week you remain there by an NPC looking to become your lover. This interest can be purely physical or romantic. The NPC can already be engaged/married or not. They might be honest with you or not. Enjoy the best curse in the world</p> !</p>
+		    <p>People of your preferred sex (or not!) seem to be constantly attracted to you romantically or sexually. Because of this, you may end up in strange, potentially troublesome situations. In every place humanoids gather, you will be accosted at least once per week you remain there by an NPC looking to become your lover. This interest can be purely physical or romantic. The NPC can already be engaged/married or not. They might be honest with you or not. Enjoy the best curse in the world.</p>
 		    <ul>
-			<li>Lawful good</li>         
+			<li>Lawful good</li>        
 			<li>Neutral good</li>
 			<li>Chaotic good</li>
 			<li>Lawful neutral</li>
@@ -116,5 +116,7 @@
 		    </ul>
 		</description>
 		<sheet alt="Curse of Attraction" />
-    </element>    
-</elements>
+    </element> 
+      
+</element>
+
