@@ -6,7 +6,6 @@
 			<file name="lover.xml" url="https://raw.githubusercontent.com/Astellle/user/master/user-yourname/lover.xml" />
 		</update>
 	</info>
-    <element>
 	    <element name="Lover" type="Background" source="5e Backgrounds Homebrew" id="ID_HOME_BACKGROUND_LOVER">
 		<description>
 		    <p>You've always had a special kind of charm on people. For some reason, people see you as an ideal candidate for an evening of fun, or a lifelong partner. This ... skill ? ... gave you a rather strange point of view on life.</p>
@@ -66,7 +65,6 @@
 		<item id="6">I'm addicted to a substance or a behaviour or a person</item>
 	      </select>
 		</rules>
-    </element>
     <element>	   
     <element name="Feature: Lover In Every City" type="Background Feature" source="5e Backgrounds Homebrew" id="ID_HOME_BACKGROUND_LOVER_FEATURE_LOVER_IN_EVERY_CITY">
 		<supports>Background Feature</supports>
@@ -117,6 +115,4 @@
 		</description>
 		<sheet alt="Curse of Attraction" />
     </element> 
-      
 </elements>
-
