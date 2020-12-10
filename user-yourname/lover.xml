@@ -3,7 +3,7 @@
 	<info>
 		<name>Lover</name>
 		<update version="1.0.0">
-			<file name="lover.xml" url="https://raw.githubusercontent.com/yourgithubaccount/Astellle/master/user-yourname/lover.xml" />
+			<file name="lover.xml" url="https://raw.githubusercontent.com/yourgithubaccount/Astellle/user/master/user-yourname/lover.xml" />
 		</update>
 	</info>
     <element name="Lover" type="Background" source="5e Backgrounds Homebrew" id="ID_HOME_BACKGROUND_LOVER">
