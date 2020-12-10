@@ -3,11 +3,10 @@
 	<info>
 		<name>Your Content</name>
 		<update version="1.0.0">
-			<file name="user-yourname.index" url="https://raw.githubusercontent.com/Astellle/user/master/background.index" />
+			<file name="user.index" url="https://raw.githubusercontent.com/Astellle/user/master/background.index" />
 		</update>
 	</info>
 	<files>
-		<file name="file1.xml" url="https://raw.githubusercontent.com/Astellle/user/master/background/file1.xml" />
-		<file name="file2.xml" url="https://raw.githubusercontent.com/Astellle/user/master/background/file2.xml" />
+		<file name="lover.xml" url="https://raw.githubusercontent.com/Astellle/master/background/lover.xml" />
 	</files>
 </index>
