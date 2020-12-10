@@ -26,9 +26,8 @@
 		<rules>
 		    <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
 		    <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
-		    <select type="Proficiency" name="Tool Proficiency (Lover)" supports="ID_PROFICIENCY_TOOL_THIEVES_TOOLS|ID_PROFICIENCY_TOOL_HERBALISM_KIT|ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" />
-		    <select type="Language" name="Language (Lover)" supports="Standard" />
-		    <select type="Language" name="Language (Lover)" supports="Standard" />
+		    <select type="Proficiency" name="Tool Proficiency (Lover)" number="3" supports="ID_PROFICIENCY_TOOL_THIEVES_TOOLS|ID_PROFICIENCY_TOOL_HERBALISM_KIT|ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" />
+		    <select type="Language" name="Language, Lover" number="2" supports="Standard" />
 		    <select type="Background Feature" id="ID_HOME_BACKGROUND_LOVER_FEATURE_LOVER_IN_EVERY_CITY|ID_HOME_BACKGROUND_LOVER_FEATURE_CURSE_OF_ATTRACTION" />
 		      <select name="Personality Trait" type="List" number="2">
 			<item id="1">Things come easy to me, so isn't it natural if I'm a bit laid back?</item>
