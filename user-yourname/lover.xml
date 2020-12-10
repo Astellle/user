@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Lover</name>
+		<update version="1.0.0">
+			<file name="lover.xml" url="https://raw.githubusercontent.com/yourgithubaccount/Astellle/master/background/lover.xml" />
+		</update>
+	</info>
+	
+	<!-- place your elements here -->
+	
+</elements>
