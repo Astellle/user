@@ -6,7 +6,7 @@
 			<file name="lover.xml" url="https://raw.githubusercontent.com/Astellle/user/master/user-yourname/lover.xml" />
 		</update>
 	</info>
-    </element>
+    <element>
     <element name="Lover" type="Background" source="5e Backgrounds Homebrew" id="ID_HOME_BACKGROUND_LOVER">
         <description>
             <p>You've always had a special kind of charm on people. For some reason, people see you as an ideal candidate for an evening of fun, or a lifelong partner. This ... skill ? ... gave you a rather strange point of view on life.</p>
@@ -17,7 +17,7 @@
 				<li><strong>Languages:</strong> Two standard languages of your choice.</li>
 				<li><strong>Equipment:</strong> a set of elegant clothes, a set of traveller's clothes, a grooming kit including a block of soap, a belt pouch with 20 gp.</li>
 			</ul>
-        <description>
+        </description>
             <div element="ID_HOME_BACKGROUND_LOVER_FEATURE_LOVER_IN_EVERY_CITY" />
             <div element="ID_HOME_BACKGROUND_LOVER_FEATURE_CURSE_OF_ATTRACTION" />
             <h5>SUGGESTED CHARACTERISTICS</h5>
@@ -95,7 +95,7 @@
         </description>
         <sheet alt="Lover's Base Personality" />
     </element>
-    </element>
+    <element>
     <element name="Feature: Curse of Attraction" type="Background Feature" source="Varient Feature" id="ID_HOME_BACKGROUND_LOVER_FEATURE_CURSE_OF_ATTRACTION">
 		<supports>Background Feature</supports>
         <description>
