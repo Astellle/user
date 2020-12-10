@@ -28,7 +28,9 @@
 		    <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
 		    <select type="Proficiency" name="Tool Proficiency (Lover)" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT|ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" />
 		    <select type="Language" name="Language (Lover)" supports="Standard||Exotic" number="2" />
-		    <select type="Background Feature" id="ID_HOME_BACKGROUND_LOVER_FEATURE_LOVER_IN_EVERY_CITY|ID_HOME_BACKGROUND_LOVER_FEATURE_CURSE_OF_ATTRACTION" />
+			<grant type="Background Feature" id="ID_HOME_BACKGROUND_LOVER_FEATURE_LOVER_IN_EVERY_CITY" requirements="!ID_HOME_BACKGROUND_LOVER_FEATURE_CURSE_OF_ATTRACTION,!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+			<select type="Background Variant" name="Variant Lover" supports="Background Variant, Lover" optional="true" />
+			<select type="Background Feature" name="Variant Feature" supports="Background Feature, Lover || Optional Background Feature" optional="true" />
 		      <select name="Personality Trait" type="List" number="2">
 			<item id="1">Things come easy to me, so isn't it natural if I'm a bit laid back?</item>
 			<item id="2">It's all a game, right?</item>
@@ -68,48 +70,56 @@
     <element name="Feature: Lover In Every City" type="Background Feature" source="5e Backgrounds Homebrew" id="ID_HOME_BACKGROUND_LOVER_FEATURE_LOVER_IN_EVERY_CITY">
 		<supports>Background Feature</supports>
         <description>
-            <p>People of your preferred sex (or not!) seem to be constantly attracted to you romantically or sexually. Because of this, you may end up in strange, potentially troublesome situations. In every place humanoids gather, you will be accosted at least once per week you remain there by an NPC looking to become your lover. This interest can be purely physical or romantic. The NPC can already be engaged/married or not. They might be honest with you or not. Enjoy the best curse in the world !</p>
-            <ul>
-                <li>Wretched</li>         
-                <li>Squalid</li>
-                <li>Poor</li>
-                <li>Modest</li>
-                <li>Comfortable</li>         
-                <li>Wealthy</li>
-                <li>Aristocratic</li>
-            </ul>
-        </description>
-        <sheet alt="Lover's Social Status/Lifestyle" />
-        <description>
-            <ul>
-                <li>Kind/Gentle</li>         
-                <li>Adventurous/Curious</li>
-                <li>Timid/Reserved</li>
-                <li>Intellectual/Patient</li>
-                <li>Snob/Arogant</li>         
-                <li>Prideful/Honorable</li>
-                <li>Jealous/Possessive</li>
-                <li>Graceful/Noble Heart</li>
-            </ul>
-        </description>
-        <sheet alt="Lover's Base Personality" />
+            <p>You have perfected the art of seduction and getting partners into your bed. Even more than that, you've learned how to make people want you. Because of your habit to pick up lovers everywhere you go, you have a lover in every city, town, village you have visited and make a new lover in every place you visit for the first time within your first week of being there. In addition, you know how to court humanoids of all races, nations, social status, and sexes.</p>
+	<table>
+		<thead>
+	<tr><td>d8</td><td>Lover's Social Status/Lifestyle</td></tr>
+		</thead>
+		<tr><td>1</td><td>Wretched</td></tr>
+		<tr><td>2</td><td>Squalid</td></tr>
+		<tr><td>3</td><td>Poor</td></tr>
+		<tr><td>4</td><td>Modest</td></tr>
+		<tr><td>5</td><td>Comfortable</td></tr>
+		<tr><td>6</td><td>Wealthy</td></tr>
+		<tr><td>7</td><td>Aristocratic</td></tr>
+		<tr><td>8</td><td>Roll again or choose another</td></tr>
+	</table>
+	<table>
+		<thead>
+	<tr><td>d8</td><td>Lover's Personality</td></tr>
+		</thead>
+		<tr><td>1</td><td>Kind/Gentle</td></tr>
+		<tr><td>2</td><td>Adventurous/Curious</td></tr>
+		<tr><td>3</td><td>Timid/Reserved</td></tr>
+		<tr><td>4</td><td>Intellectual/Patient</td></tr>
+		<tr><td>5</td><td>Snob/Arogant</td></tr>
+		<tr><td>6</td><td>Prideful/Honorable</td></tr>
+		<tr><td>7</td><td>Jealous/Possessive</td></tr>
+		<tr><td>8</td><td>Graceful/Noble Heart</td></tr>
+	</table>
+	</description>
+        <sheet alt="Feature: Lover In Every City" />
 	</element>
-	<element name="Feature: Curse of Attraction" type="Background Feature" source="Varient Feature" id="ID_HOME_BACKGROUND_LOVER_FEATURE_CURSE_OF_ATTRACTION">
+	
+	<element name="Variant Lover: Curse of Attraction" type="Background Variant" source="5e Backgrounds Homebrew" id="ID_HOME_BACKGROUND_LOVER_FEATURE_CURSE_OF_ATTRACTION">
 		<supports>Background Feature</supports>
 	<description>
-	    <p>People of your preferred sex (or not!) seem to be constantly attracted to you romantically or sexually. Because of this, you may end up in strange, potentially troublesome situations. In every place humanoids gather, you will be accosted at least once per week you remain there by an NPC looking to become your lover. This interest can be purely physical or romantic. The NPC can already be engaged/married or not. They might be honest with you or not. Enjoy the best curse in the world.</p>
-	    <ul>
-		<li>Lawful good</li>        
-		<li>Neutral good</li>
-		<li>Chaotic good</li>
-		<li>Lawful neutral</li>
-		<li>Neutral</li>
-		<li>Lawful neutral</li>
-		<li>Chaotic neutral</li>
-		<li>Lawful evil</li>
-		<li>Neutral evil</li>
-		<li>Chaotic evil</li>
-	    </ul>
+	    <p>People of your preferred sex (or not!) seem to be constantly attracted to you romantically or sexually. Because of this, you may end up in strange, potentially troublesome situations. In every place humanoids gather, you will be accosted at least once per week you remain there by an NPC looking to become your lover. This interest can be purely physical or romantic. The NPC can already be engaged/married or not. They might be honest with you or not. Enjoy the best curse in the world!</p>
+	<table>
+		<thead>
+	<tr><td>d10</td><td>Lover's Alignment</td></tr>
+		</thead>
+		<tr><td>1</td><td>Lawful Good</td></tr>
+		<tr><td>2</td><td>Neutral Good</td></tr>
+		<tr><td>3</td><td>Chaotic Good</td></tr>
+		<tr><td>4</td><td>Lawful Neutral</td></tr>
+		<tr><td>5</td><td>Neutral</td></tr>
+		<tr><td>6</td><td>Chaotic Neutral</td></tr>
+		<tr><td>7</td><td>Lawful Evil</td></tr>
+		<tr><td>8</td><td>Neutral Evil</td></tr>
+		<tr><td>9</td><td>Chaotic Evil</td></tr>
+		<tr><td>10</td><td>Roll again or choose another</td></tr>
+	</table>
 	</description>
 	<sheet alt="Curse of Attraction" />
     </element> 
