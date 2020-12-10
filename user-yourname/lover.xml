@@ -64,8 +64,7 @@
 		<item id="5">I don't feel guilt, I don't feel much of anything actually.</item>
 		<item id="6">I'm addicted to a substance or a behaviour or a person</item>
 	      </select>
-		</rules>
-    <element>	   
+		</rules>	   
     <element name="Feature: Lover In Every City" type="Background Feature" source="5e Backgrounds Homebrew" id="ID_HOME_BACKGROUND_LOVER_FEATURE_LOVER_IN_EVERY_CITY">
 		<supports>Background Feature</supports>
         <description>
@@ -95,7 +94,6 @@
         </description>
         <sheet alt="Lover's Base Personality" />
     </element>
-    <element>
 	    <element name="Feature: Curse of Attraction" type="Background Feature" source="Varient Feature" id="ID_HOME_BACKGROUND_LOVER_FEATURE_CURSE_OF_ATTRACTION">
 			<supports>Background Feature</supports>
 		<description>
