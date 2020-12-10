@@ -28,9 +28,7 @@
 		    <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
 		    <select type="Proficiency" name="Tool Proficiency (Lover)" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT|ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" />
 		    <select type="Language" name="Language (Lover)" supports="Standard||Exotic" number="2" />
-			<grant type="Background Feature" id="ID_HOME_BACKGROUND_LOVER_FEATURE_LOVER_IN_EVERY_CITY" requirements="!ID_HOME_BACKGROUND_LOVER_FEATURE_CURSE_OF_ATTRACTION,!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
-			<select type="Background Variant" name="Variant Lover" supports="Background Variant, Lover" optional="true" />
-			<select type="Background Feature" name="Variant Feature" supports="Background Feature, Lover || Optional Background Feature" optional="true" />
+			<grant type="Background Feature" id="ID_HOME_BACKGROUND_LOVER_FEATURE_LOVER_IN_EVERY_CITY" />
 		      <select name="Personality Trait" type="List" number="2">
 			<item id="1">Things come easy to me, so isn't it natural if I'm a bit laid back?</item>
 			<item id="2">It's all a game, right?</item>
