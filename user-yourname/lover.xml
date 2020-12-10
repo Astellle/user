@@ -96,7 +96,7 @@
 		<tr><td>8</td><td>Graceful/Noble Heart</td></tr>
 	</table>
 	</description>
-        <sheet alt="Feature: Lover In Every City" />
+        <sheet alt="Lover In Every City" />
 	</element>
 	
 	<element name="Variant Lover: Curse of Attraction" type="Background Variant" source="5e Backgrounds Homebrew" id="ID_HOME_BACKGROUND_LOVER_FEATURE_CURSE_OF_ATTRACTION">
