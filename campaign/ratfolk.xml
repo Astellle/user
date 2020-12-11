@@ -133,6 +133,7 @@
         <rules>
             <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
         </rules>
+	</element>
 
     <!-- Languages -->
     <element name="Beast Speech" type="Language" source="5e Homebrew" id="ID_HOME_LANGUAGE_BEAST_SPEECH">
