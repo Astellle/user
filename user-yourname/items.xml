@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Items</name>
+		<update version="1.0.0">
+			<file name="items.xml" url="https://raw.githubusercontent.com/Astellle/user/master/user-yourname/items.xml" />
+		</update>
+	</info>
+  	<element name="Grooming Kit" type="Item" source="5e Homebrew" id="ID_HOME_KIT_GROOMONG_KIT">
+		<description>
+			<p> Collection of brushes and combs that are needed to keep one clean, shining and healthy.</p>
+			<p class="indent"><strong><em>Components.</em></strong> Grooming kit include a sun-protection lotion, soap, a perfume bottle, a comb, a hair-cleaning serum, and body and face moisturizer.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Item</set>
+			<set name="rarity">Common</set>
+			<set name="attunement">false</set>
+		</setters>
+		</rules>
+	</element>
+  </elements>
