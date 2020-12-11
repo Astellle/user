@@ -3,7 +3,7 @@
 	<info>
 		<name>Campaign</name>
 		<update version="1.0.0">
-			<file name="background.index" url="https://raw.githubusercontent.com/Astellle/user/master/campaign.index" />
+			<file name="campaign.index" url="https://raw.githubusercontent.com/Astellle/user/master/campaign.index" />
 		</update>
 	</info>
 	<files>
