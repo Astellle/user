@@ -7,7 +7,6 @@
 		</update>
 	</info>
 	<files>
-		<file name="lover.xml" url="https://raw.githubusercontent.com/Astellle/user/master/user-yourname/lover.xml" />
-		<file name="items.xml" url="https://raw.githubusercontent.com/Astellle/user/master/user-yourname/items.xml" />
+		<file name="ratfolk.xml" url="https://raw.githubusercontent.com/Astellle/user/master/campaign/ratfolk.xml" />
 	</files>
 </index>
