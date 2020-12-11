@@ -47,11 +47,10 @@
             <stat name="dexterity" value="2" />
             <stat name="innate speed" value="35" bonus="base" />
             <grant type="Size" id="ID_SIZE_MEDIUM" />
-  			    <grant type="Vision" id="ID_VISION_DARKVISION" />
+  	    <grant type="Vision" id="ID_VISION_DARKVISION" />
             <grant type="Racial Trait" id="ID_HOME_RACIAL_TRAIT_SNEAKY" />
-            <grant type="Racial Trait" id="ID_HOME_THIN_FRAME" />
             <grant type="Language" id="ID_LANGUAGE_COMMON" />
-            <grant type="Language" id="ID_HOME_LANGUAGE_BEAST_SPEECH" />          
+            <select type="Language" name="Extra Language (Ratfolk)" supports="Standard||Exotic" />        
             <grant type="Racial Trait" id="ID_HOME_RACIAL_TRAIT_RATFOLK_SUBRACE" />
         </rules>
     </element>
@@ -92,7 +91,6 @@
         <rules>
             <stat name="charisma" value="1" />
             <grant type="Racial Trait" id="ID_HOME_RACIAL_TRAIT_DUPLICITY" />
-            <grant type="Racial Trait" id="ID_WOTC_PSZ_RACIAL_TRAIT_SHADOW_BLEND" />
         </rules>
     </element>
     <element name="Duplicity" type="Racial Trait" source="5e Homebrew" id="ID_HOME_RACIAL_TRAIT_DUPLICITY">
@@ -120,7 +118,6 @@
         <rules>
             <stat name="intelligence" value="2" />
             <grant type="Racial Trait" id="ID_HOME_RACIAL_TRAIT_KEEN_SENSES" />
-            <grant type="Racial Trait" id="ID_HOME_RACIAL_TRAIT_WINDFOOT_CELERITY" />
         </rules>
     </element>
     <element name="Keen Senses" type="Racial Trait" source="5e Homebrew" id="ID_HOME_RACIAL_TRAIT_KEEN_SENSES">
