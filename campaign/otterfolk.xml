@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Otterfolk</name>
+		<update version="1.0.0">
+			<file name="otter.xml" url="https://raw.githubusercontent.com/Astellle/user/master/campaign/otterfolk.xml" />
+		</update>
+	</info>
+  <element name="Otterfolk" type="Race" source="5e Homebrew" id="ID_HOME_RACE_OTTERFOLK">
+        <description>
+            <p>A small, fur-covered creature that comes in various shades of brown, including black, gray, and even white on occasion. They tend to have small claws and sharp teeth that are for eating alone as these beings have learned how to develop and use tools.</p>
+            
+          
+            <h4>PHYSICAL DESCRIPTION</h4>
+            <p>A small, fur-covered creature that comes in various shades of brown, including black, gray, and even white on occasion. They tend to have small claws and sharp teeth that are for eating alone as these beings have learned how to develop and use tools.</p>
+
+          <h4>HISTORY</h4>
+            <p>Otterfolk were created when a wizard gave human intelligence to a normal otter. The otter escaped into the wild and bred with a normal otter, passing its intelligence on to its offspring. Eventually their bodies evolved to suit their intelligence, and they became bipedal and grew thumbs.</p>
+
+          <h4>SOCIETY</h4>
+            <p>The Otterfolk control large portions of rivers and even entire bays where rivers meet the sea. The only place where Otterfolk aren’t found is around the waters of large swamps that Lizardfolk, their natural enemy, reside in.</p>
+          
+          <h4>RATFOLK NAMES</h4>
+            <p class="indent"><b><i>Male:</i></b>Qaz, Drahsid, Haz, Gal’kyk, Kar, Lao</p>
+	    <p class="indent"><b><i>Female:</i></b>Wer, Shir’li, Ry, Muy, Yao</p>
+            <p class="indent"><b><i>Nickname</i></b>Water-Rat, Rutter Rat, Dog Fish</p>
+          
+		<h4>RATFOLK TRAITS</h4>
+
+            <p class="indent"><b><i>Ability Score Increase. </i></b>Your Dexterity and Wisdom scores both increase by 1.</p>
+            <p class="indent"><b><i>Age. </i></b>You generally reach maturity at around the age of 10 years. You live for about 65 years, however can reach the age of about 120.</p>
+            <p class="indent"><b><i>Alignment. </i></b>You are chaotic due to their nature, however they can easily shy away from chaos and learn the values of law.</p>
+            <p class="indent"><b><i>Size. </i></b>You stand at around 3 feet to 4 feet tall. Your size is Small.</p>
+            <p class="indent"><b><i>Speed. </i></b>Your base walking speed is 35 feet. You swim at a speed of 40 feet.</p>
+            <p class="indent"><b><i>Darkvision. </i></b>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+            <p class="indent"><b><i>Instinctual Hunter. </i></b>You are a naturally keen hunter, catching prey is in their blood. Because of this, you have proficiency in the Perception skill.</p>
+            <p class="indent"><b><i>Long Breath. </i></b>While submerged in water, you can hold your breath for one hour.</p>
+            <p class="indent"><b><i>Nimble. </i></b>You can move through the space of any creature that is of a size larger than Small.</p>
+		<p class="indent"><b><i>Agile Swimmer.  </i></b>You have advantage on acrobatics and Dexterity (Acrobatics) checks while you are underwater</p>
+		<p class="indent"><b><i>Languages. </i></b>You can speak, read, and write Common and Aquan.</p>
+            <p class="indent"><b><i>Subrace. </i></b>You must choose between three subraces of otterfolk: Builder, Fighter, or Fisher.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="wisdom" value="1" />
+	    <stat name="dexterity" value="1" />
+            <stat name="innate speed" value="35" bonus="base" />
+	    <stat name="innate speed:run" value="40" bonus="base" />
+            <grant type="Size" id="ID_SIZE_SMALL" />
+  	    <grant type="Vision" id="ID_VISION_DARKVISION" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" />
+	    <grant type="Language" id="ID_LANGUAGE_AQUAN" />
+	    <grant type="Racial Trait" id="ID_HOME_RACIAL_TRAIT_OTTERFOLK_INSTINCTUAL_HUNTER" />
+	    <grant type="Racial Trait" id="ID_HOME_RACIAL_TRAIT_OTTERFOLK_AGILE_SWIMMER" />
+	    <grant type="Racial Trait" id="ID_HOME_RACIAL_TRAIT_OTTERFOLK_SUBRACE" />
+        </rules>
+    </element>
+  
+    <element name="Otterfolk Subrace" type="Racial Trait" source="5e Homebrew" id="ID_HOME_RACIAL_TRAIT_OTTERFOLK_SUBRACE">
+        <supports>Otterfolk</supports>
+        <sheet display="false"/>
+        <rules>
+            <select type="Sub Race" name="Otterfolk Subrace" supports="Otterfolk Subrace" />
+        </rules>
+    </element>
+  
+    <element name="Instinctual Hunter" type="Racial Trait" source="5e Homebrew" id="ID_HOME_RACIAL_TRAIT_INSTINCTUAL_HUNTER">
+        <description>
+            <p>You have proficiency in the Stealth skill.</p>
+        </description>
+        <sheet display="false">
+            <description>You gain proficiency in the Stealth skill.</description>
+        </sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+		</rules>
+    </element>
+
+	<element name="Agile Swimmer" type="Racial Trait" source="5e Homebrew" id="ID_HOME_RACIAL_TRAIT_AGILE_SWIMMER">
+        <description>
+            <p>You have advantage on acrobatics and Dexterity (Acrobatics) checks while you are underwater.</p>
+        </description>
+        <sheet display="false">
+            <description>You have advantage on acrobatics and Dexterity (Acrobatics) checks while you are underwater</description>
+        </sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
+		</rules>
+    </element>
+
+    <!-- Builder -->
+    <element name="Builder" type="Sub Race" source="5e Homebrew" id="ID_HOME_OTTERSUB_BUILDER">
+        <supports>Otterfolk Subrace</supports>
+        <description>
+            <p class="indent"><b><i>Ability Score Increase. </i></b>Your Constitution score increases by 1.</p>
+            <p class="indent"><b><i>Hard Worker. </i></b>You have advantage on Constitution saving throws against exhaustion.</p>
+            <p class="indent"><b><i>Natural Artisan. </i></b>You are proficient in one artisan's tool of their choice.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <stat name="constitution" value="1" />
+        </rules>
+    </element>
+    <element name="Natural Artisan" type="Racial Trait" source="5e Homebrew" id="ID_HOME_RACIAL_TRAIT_NATURAL_ARTISAN">
+        <description>
+            <p>You are proficient in one artisan's tool of their choice.</p>
+        </description>
+        <sheet display="false">
+            <description>You are proficient in one artisan's tool of their choice.</description>
+        </sheet>
+        <rules>
+            <select type="Proficiency" name="Tool Proficiency (Builder)" supports="Artisan tools" />
+        </rules>
+    </element>
+
+    <!-- Fighter -->
+    <element name="Fighter" type="Sub Race" source="5e Homebrew" id="ID_HOME_OTTERSUB_FIGHTER">
+        <supports>Ratfolk Subrace</supports>
+        <description>
+            <p class="indent"><b><i>Ability Score Increase. </i></b>Your Strength score increases by 1.</p>
+            <p class="indent"><b><i>Bite. </i></b>You can choose for your bite attack to deal piercing damage equal to 1d6 + your Strength modifier.</p>
+            <p class="indent"><b><i>Natural Athlete. </i></b>You are proficient in the Athletics skill.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <stat name="intelligence" value="1" />
+        </rules>
+    </element>
+    <element name="Natural Athlete" type="Racial Trait" source="5e Homebrew" id="ID_HOME_RACIAL_TRAIT_NATURAL_ATHLETE">
+        <description>
+            <p>You are proficient in the Athletics skill.</p>
+        </description>
+        <sheet display="false">
+            <description>You are proficient in the Athletics skill.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+        </rules>
+	</element>
+ 
+    <!-- Fisher -->
+    <element name="Fisher" type="Sub Race" source="5e Homebrew" id="ID_HOME_OTTERSUB_FISHER">
+        <supports>Ratfolk Subrace</supports>
+        <description>
+            <p class="indent"><b><i>Ability Score Increase. </i></b>Your Dexterity score increases by 1.</p>
+            <p class="indent"><b><i>Fast Swimmer. </i></b>Your swim speed increases by 10 feet</p>
+            <p class="indent"><b><i>Survivor's Instinct. </i></b>You have advantage on Wisdom (Survival) checks made in naturally-occurring rivers, streams, and lakes.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <stat name="dexterity" value="1" />
+        </rules>
+    </element>
+  
+</elements>
