@@ -51,11 +51,47 @@
             <grant type="Language" id="ID_LANGUAGE_COMMON" />
 	    <grant type="Language" id="ID_HOME_LANGUAGE_AQUAN" />
 	    <grant type="Racial Trait" id="ID_HOME_RACIAL_TRAIT_OTTERFOLK_INSTINCTUAL_HUNTER" />
+	    <grant type="Racial Trait" id="ID_HOME_RACIAL_TRAIT_OTTERFOLK_LONG_BREATH" />
+	    <grant type="Racial Trait" id="ID_HOME_RACIAL_TRAIT_OTTERFOLK_NIMBLE" />
 	    <grant type="Racial Trait" id="ID_HOME_RACIAL_TRAIT_OTTERFOLK_AGILE_SWIMMER" />
 	    <grant type="Racial Trait" id="ID_HOME_RACIAL_TRAIT_OTTERFOLK_SUBRACE" />
         </rules>
     </element>
-  
+    <element name="Instinctual Hunter" type="Racial Trait" source="5e Homebrew" id="ID_HOME_RACIAL_TRAIT_OTTERFOLK_INSTINCTUAL_HUNTER">
+        <description>
+            <p>You have proficiency in the Stealth skill.</p>
+        </description>
+        <sheet>
+            <description>You gain proficiency in the Stealth skill.</description>
+        </sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+		</rules>
+    </element>
+      <element name="Long Breath" type="Racial Trait" source="5e Homebrew" id="ID_HOME_RACIAL_TRAIT_OTTERFOLK_LONG_BREATH">
+        <description>
+            <p>While submerged in water, you can hold your breath for one hour.</p>
+        </description>
+        <sheet>
+            <description>While submerged in water, you can hold your breath for one hour.</description>
+        </sheet>
+    </element>
+	      <element name="Nimble" type="Racial Trait" source="5e Homebrew" id="ID_HOME_RACIAL_TRAIT_OTTERFOLK_NIMBLE">
+        <description>
+            <p>You can move through the space of any creature that is of a size larger than Small.</p>
+        </description>
+        <sheet>
+            <description>You can move through the space of any creature that is of a size larger than Small.</description>
+        </sheet>
+    </element>
+	      <element name="Agile Swimmer" type="Racial Trait" source="5e Homebrew" id="ID_HOME_RACIAL_TRAIT_OTTERFOLK_AGILE_SWIMMER">
+        <description>
+            <p>You have advantage on acrobatics and Dexterity (Acrobatics) checks while you are underwater.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on acrobatics and Dexterity (Acrobatics) checks while you are underwater.</description>
+        </sheet>
+    </element>	
     <element name="Otterfolk Subrace" type="Racial Trait" source="5e Homebrew" id="ID_HOME_RACIAL_TRAIT_OTTERFOLK_SUBRACE">
         <supports>Otterfolk</supports>
         <sheet display="false"/>
@@ -63,18 +99,7 @@
             <select type="Sub Race" name="Otterfolk Subrace" supports="Otterfolk Subrace" />
         </rules>
     </element>
-  
-    <element name="Instinctual Hunter" type="Racial Trait" source="5e Homebrew" id="ID_HOME_RACIAL_TRAIT_OTTERFOLK_INSTINCTUAL_HUNTER">
-        <description>
-            <p>You have proficiency in the Stealth skill.</p>
-        </description>
-        <sheet display="false">
-            <description>You gain proficiency in the Stealth skill.</description>
-        </sheet>
-		<rules>
-			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
-		</rules>
-    </element>
+ 
 
 	<element name="Agile Swimmer" type="Racial Trait" source="5e Homebrew" id="ID_HOME_RACIAL_TRAIT_OTTERFOLK_AGILE_SWIMMER">
         <description>
@@ -99,14 +124,23 @@
         <sheet display="false"/>
         <rules>
             <stat name="constitution" value="1" />
+            <grant type="Racial Trait" id="ID_HOME_RACIAL_TRAIT_OTTERFOLK_HARD_WORKER" />
 	    <grant type="Racial Trait" id="ID_HOME_RACIAL_TRAIT_OTTERFOLK_NATURAL_ARTISAN" />
         </rules>
     </element>
+	      <element name="Hard Worker" type="Racial Trait" source="5e Homebrew" id="ID_HOME_RACIAL_TRAIT_OTTERFOLK_HARD_WORKER">
+        <description>
+            <p>You have advantage on Constitution saving throws against exhaustion.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on Constitution saving throws against exhaustion.</description>
+        </sheet>
+    </element>	
     <element name="Natural Artisan" type="Racial Trait" source="5e Homebrew" id="ID_HOME_RACIAL_TRAIT_OTTERFOLK_NATURAL_ARTISAN">
         <description>
             <p>You are proficient in one artisan's tool of their choice.</p>
         </description>
-        <sheet display="false">
+        <sheet>
             <description>You are proficient in one artisan's tool of their choice.</description>
         </sheet>
         <rules>
@@ -125,14 +159,24 @@
         <sheet display="false"/>
         <rules>
             <stat name="intelligence" value="1" />
+	    <grant type="Racial Trait" id="ID_HOME_RACIAL_TRAIT_OTTERFOLK_BITE" />		
 		<grant type="Racial Trait" id="ID_HOME_RACIAL_TRAIT_NATURAL_ATHLETE" />
+
         </rules>
     </element>
+	      <element name="Bite" type="Racial Trait" source="5e Homebrew" id="ID_HOME_RACIAL_TRAIT_OTTERFOLK_BITE">
+        <description>
+            <p>You can choose for your bite attack to deal piercing damage equal to 1d6 + your Strength modifier.</p>
+        </description>
+        <sheet>
+            <description>You can choose for your bite attack to deal piercing damage equal to 1d6 + your Strength modifier.</description>
+        </sheet>
+    </element>		
     <element name="Natural Athlete" type="Racial Trait" source="5e Homebrew" id="ID_HOME_RACIAL_TRAIT_NATURAL_ATHLETE">
         <description>
             <p>You are proficient in the Athletics skill.</p>
         </description>
-        <sheet display="false">
+        <sheet>
             <description>You are proficient in the Athletics skill.</description>
         </sheet>
         <rules>
@@ -151,9 +195,26 @@
         <sheet display="false"/>
         <rules>
             <stat name="dexterity" value="1" />
+	    <grant type="Racial Trait" id="ID_HOME_RACIAL_TRAIT_OTTERFOLK_FAST_SWIMMER" />		
+		<grant type="Racial Trait" id="ID_HOME_RACIAL_TRAIT_OTTERFOLK_SURVIVORS_INSTINCT" />		
         </rules>
     </element>
-
+	      <element name="Fast Swimmer" type="Racial Trait" source="5e Homebrew" id="ID_HOME_RACIAL_TRAIT_OTTERFOLK_FAST_SWIMMER">
+        <description>
+            <p>Your swim speed increases by 10 feet.</p>
+        </description>
+        <sheet>
+            <description>Your swim speed increases by 10 feet.</description>
+        </sheet>
+    </element>	
+	      <element name="Survivor's Instinct" type="Racial Trait" source="5e Homebrew" id="ID_HOME_RACIAL_TRAIT_OTTERFOLK_SURVIVORS_INSTINCT">
+        <description>
+            <p>You have advantage on Wisdom (Survival) checks made in naturally-occurring rivers, streams, and lakes.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on Wisdom (Survival) checks made in naturally-occurring rivers, streams, and lakes.</description>
+        </sheet>
+    </element>		
     <!-- Languages -->
     <element name="Aquan" type="Language" source="5e Homebrew" id="ID_HOME_LANGUAGE_AQUAN">
         <description>
