@@ -49,7 +49,7 @@
             <grant type="Size" id="ID_SIZE_SMALL" />
   	    <grant type="Vision" id="ID_VISION_DARKVISION" />
             <grant type="Language" id="ID_LANGUAGE_COMMON" />
-	    <grant type="Language" id="ID_LANGUAGE_AQUAN" />
+	    <grant type="Language" id="ID_HOME_LANGUAGE_AQUAN" />
 	    <grant type="Racial Trait" id="ID_HOME_RACIAL_TRAIT_OTTERFOLK_INSTINCTUAL_HUNTER" />
 	    <grant type="Racial Trait" id="ID_HOME_RACIAL_TRAIT_OTTERFOLK_AGILE_SWIMMER" />
 	    <grant type="Racial Trait" id="ID_HOME_RACIAL_TRAIT_OTTERFOLK_SUBRACE" />
@@ -99,6 +99,7 @@
         <sheet display="false"/>
         <rules>
             <stat name="constitution" value="1" />
+	    <grant type="Racial Trait" id="ID_HOME_RACIAL_TRAIT_OTTERFOLK_NATURAL_ARTISAN" />
         </rules>
     </element>
     <element name="Natural Artisan" type="Racial Trait" source="5e Homebrew" id="ID_HOME_RACIAL_TRAIT_OTTERFOLK_NATURAL_ARTISAN">
@@ -115,7 +116,7 @@
 
     <!-- Fighter -->
     <element name="Fighter" type="Sub Race" source="5e Homebrew" id="ID_HOME_RACIAL_TRAIT_OTTERSUB_FIGHTER">
-        <supports>Ratfolk Subrace</supports>
+        <supports>Otterfolk Subrace</supports>
         <description>
             <p class="indent"><b><i>Ability Score Increase. </i></b>Your Strength score increases by 1.</p>
             <p class="indent"><b><i>Bite. </i></b>You can choose for your bite attack to deal piercing damage equal to 1d6 + your Strength modifier.</p>
@@ -124,6 +125,7 @@
         <sheet display="false"/>
         <rules>
             <stat name="intelligence" value="1" />
+		<grant type="Racial Trait" id="ID_HOME_RACIAL_TRAIT_NATURAL_ATHLETE" />
         </rules>
     </element>
     <element name="Natural Athlete" type="Racial Trait" source="5e Homebrew" id="ID_HOME_RACIAL_TRAIT_NATURAL_ATHLETE">
@@ -140,7 +142,7 @@
  
     <!-- Fisher -->
     <element name="Fisher" type="Sub Race" source="5e Homebrew" id="ID_HOME_OTTERSUB_FISHER">
-        <supports>Ratfolk Subrace</supports>
+        <supports>Otterfolk Subrace</supports>
         <description>
             <p class="indent"><b><i>Ability Score Increase. </i></b>Your Dexterity score increases by 1.</p>
             <p class="indent"><b><i>Fast Swimmer. </i></b>Your swim speed increases by 10 feet</p>
