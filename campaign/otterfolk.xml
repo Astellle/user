@@ -64,7 +64,7 @@
         </rules>
     </element>
   
-    <element name="Instinctual Hunter" type="Racial Trait" source="5e Homebrew" id="ID_HOME_RACIAL_TRAIT_INSTINCTUAL_HUNTER">
+    <element name="Instinctual Hunter" type="Racial Trait" source="5e Homebrew" id="ID_HOME_RACIAL_TRAIT_OTTERFOLK_INSTINCTUAL_HUNTER">
         <description>
             <p>You have proficiency in the Stealth skill.</p>
         </description>
@@ -76,7 +76,7 @@
 		</rules>
     </element>
 
-	<element name="Agile Swimmer" type="Racial Trait" source="5e Homebrew" id="ID_HOME_RACIAL_TRAIT_AGILE_SWIMMER">
+	<element name="Agile Swimmer" type="Racial Trait" source="5e Homebrew" id="ID_HOME_RACIAL_TRAIT_OTTERFOLK_AGILE_SWIMMER">
         <description>
             <p>You have advantage on acrobatics and Dexterity (Acrobatics) checks while you are underwater.</p>
         </description>
@@ -101,7 +101,7 @@
             <stat name="constitution" value="1" />
         </rules>
     </element>
-    <element name="Natural Artisan" type="Racial Trait" source="5e Homebrew" id="ID_HOME_RACIAL_TRAIT_NATURAL_ARTISAN">
+    <element name="Natural Artisan" type="Racial Trait" source="5e Homebrew" id="ID_HOME_RACIAL_TRAIT_OTTERFOLK_NATURAL_ARTISAN">
         <description>
             <p>You are proficient in one artisan's tool of their choice.</p>
         </description>
@@ -114,7 +114,7 @@
     </element>
 
     <!-- Fighter -->
-    <element name="Fighter" type="Sub Race" source="5e Homebrew" id="ID_HOME_OTTERSUB_FIGHTER">
+    <element name="Fighter" type="Sub Race" source="5e Homebrew" id="ID_HOME_RACIAL_TRAIT_OTTERSUB_FIGHTER">
         <supports>Ratfolk Subrace</supports>
         <description>
             <p class="indent"><b><i>Ability Score Increase. </i></b>Your Strength score increases by 1.</p>
@@ -151,5 +151,17 @@
             <stat name="dexterity" value="1" />
         </rules>
     </element>
+
+    <!-- Languages -->
+    <element name="Aquan" type="Language" source="5e Homebrew" id="ID_HOME_LANGUAGE_AQUAN">
+        <description>
+            <p>The language of Water Elementals.</p>
+        </description>
+        <setters>
+            <set name="exotic">true</set>
+            <set name="speakers">Otterfolk</set>
+            <set name="script">Otterfolk</set>
+        </setters>
+    </element>  
   
 </elements>
