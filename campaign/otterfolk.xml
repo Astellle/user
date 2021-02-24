@@ -47,7 +47,7 @@
             <stat name="innate speed" value="35" bonus="base" />
 	    <stat name="innate speed:run" value="40" bonus="base" />
             <grant type="Size" id="ID_SIZE_SMALL" />
-  	    <grant type="Vision" id="ID_VISION_DARKVISION" />
+  	    <grant type="Vision" id="ID_HOME_VISION_DARKVISION" />		
             <grant type="Language" id="ID_LANGUAGE_COMMON" />
 	    <grant type="Language" id="ID_HOME_LANGUAGE_AQUAN" />
 	    <grant type="Racial Trait" id="ID_HOME_RACIAL_TRAIT_OTTERFOLK_INSTINCTUAL_HUNTER" />
@@ -57,6 +57,14 @@
 	    <grant type="Racial Trait" id="ID_HOME_RACIAL_TRAIT_OTTERFOLK_SUBRACE" />
         </rules>
     </element>
+    <element name="Darkvision" type="Vision" source="5e Homebrew" id="ID_HOME_VISION_DARKVISION">
+        <description>
+            <p>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+        </description>
+        <sheet>
+            <description>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</description>
+        </sheet>
+    </element>	
     <element name="Instinctual Hunter" type="Racial Trait" source="5e Homebrew" id="ID_HOME_RACIAL_TRAIT_OTTERFOLK_INSTINCTUAL_HUNTER">
         <description>
             <p>You have proficiency in the Stealth skill.</p>
