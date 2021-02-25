@@ -214,6 +214,9 @@
         <sheet>
             <description>Your swim speed increases by 10 feet.</description>
         </sheet>
+        <rules>
+		<stat name="innate speed:swim" value="50" bonus="base" />	
+        </rules>		      
     </element>	
 	      <element name="Survivor's Instinct" type="Racial Trait" source="5e Homebrew" id="ID_HOME_RACIAL_TRAIT_OTTERFOLK_SURVIVORS_INSTINCT">
         <description>
