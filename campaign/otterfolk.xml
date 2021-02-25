@@ -31,7 +31,7 @@
             <p class="indent"><b><i>Age. </i></b>You generally reach maturity at around the age of 10 years. You live for about 65 years, however can reach the age of about 120.</p>
             <p class="indent"><b><i>Alignment. </i></b>You are chaotic due to their nature, however they can easily shy away from chaos and learn the values of law.</p>
             <p class="indent"><b><i>Size. </i></b>You stand at around 3 feet to 4 feet tall. Your size is Small.</p>
-            <p class="indent"><b><i>Speed. </i></b>Your base walking speed is 35 feet. You swim at a speed of 40 feet.</p>
+            <p class="indent"><b><i>Speed. </i></b>Your base walking speed is 25 feet. You swim at a speed of 40 feet.</p>
             <p class="indent"><b><i>Darkvision. </i></b>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
             <p class="indent"><b><i>Instinctual Hunter. </i></b>You are a naturally keen hunter, catching prey is in their blood. Because of this, you have proficiency in the Perception skill.</p>
             <p class="indent"><b><i>Long Breath. </i></b>While submerged in water, you can hold your breath for one hour.</p>
@@ -44,8 +44,8 @@
         <rules>
             <stat name="wisdom" value="1" />
 	    <stat name="dexterity" value="1" />
-            <stat name="innate speed" value="35" bonus="base" />
-	    <stat name="innate speed:run" value="40" bonus="base" />
+            <stat name="innate speed" value="25" bonus="base" />
+	    <stat name="innate speed:swim" value="40" bonus="base" />
             <grant type="Size" id="ID_SIZE_SMALL" />
   	    <grant type="Vision" id="ID_HOME_VISION_DARKVISION" />		
             <grant type="Language" id="ID_LANGUAGE_COMMON" />
