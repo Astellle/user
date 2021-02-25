@@ -166,7 +166,7 @@
         </description>
         <sheet display="false"/>
         <rules>
-            <stat name="intelligence" value="1" />
+            <stat name="strength" value="1" />
 	    <grant type="Racial Trait" id="ID_HOME_RACIAL_TRAIT_OTTERFOLK_BITE" />		
 		<grant type="Racial Trait" id="ID_HOME_RACIAL_TRAIT_NATURAL_ATHLETE" />
 
