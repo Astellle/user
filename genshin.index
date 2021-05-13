@@ -5,7 +5,7 @@
 		<description>A plan to turn Genshin characters into D&D characters</description>
 		<author>Emily Yang</author>
 		<update version="0.1">
-			<file name="players-handbook.index" url="https://raw.githubusercontent.com/Astellle/user/master/Genshin/genshin.index" />
+			<file name="players-handbook.index" url="https://raw.githubusercontent.com/Astellle/user/master/genshin.index" />
 		</update>
 	</info>
 	<files>	
