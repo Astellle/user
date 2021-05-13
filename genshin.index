@@ -7,9 +7,7 @@
 			<file name="genshin.index" url="https://raw.githubusercontent.com/Astellle/user/master/genshin.index" />
 		</update>
 	</info>
-	<files>	
-		<file name="source.xml" url="https://raw.githubusercontent.com/Astellle/user/master/genshin/source.xml" />
-		
+	<files>		
 		<!-- races -->
 		<file name="human-traveler.xml" url="https://raw.githubusercontent.com/Astellle/user/master/genshin/races/human-traveler.xml" />
 
