@@ -9,10 +9,10 @@
 		</update>
 	</info>
 	<files>	
-		<file name="source.xml" url="https://raw.githubusercontent.com/Astellle/user/master/Genshin/source.xml" />
+		<file name="source.xml" url="https://raw.githubusercontent.com/Astellle/user/master/genshin/source.xml" />
 		
 		<!-- races -->
-		<file name="human-traveler.xml" url="https://raw.githubusercontent.com/Astellle/user/master/Genshin/Races/human-traveler.xml" />
+		<file name="human-traveler.xml" url="https://raw.githubusercontent.com/Astellle/user/master/genshin/races/human-traveler.xml" />
 
 
 		<!-- classes -->
