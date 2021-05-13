@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+-<elements>
+
+
+-<info>
+
+<name>Human</name>
+
+<description/>
+
+<author url="Emily Yang</author>
+
+
+-<update version="0.1">
+
+<file url="https://raw.githubusercontent.com/Astellle/user/Genshin/Races/human-traveler.xml" name="human-traveler.xml"/>
+
+</update>
+
+</info>
+
+
+-<element name="Human" id="ID_RACE_HUMAN" source="Genshin" type="Race">
+
+
+-<description>
+
+<p class="flavor">In the reckonings of most worlds, humans are the youngest of the common races, late to arrive on the world scene and short-lived in comparison to dwarves, elves, and dragons. Perhaps it is because of their shorter lives that they strive to achieve as much as they can in the years they are given. Or maybe they feel they have something to prove to the elder races, and that’s why they build their mighty empires on the foundation of conquest and trade. Whatever drives them, humans are the innovators, the achievers, and the pioneers of the worlds.</p>
+
+<h4>A BROAD SPECTRUM</h4>
+
+<p>With their penchant for migration and conquest, humans are more physically diverse than other common races. There is no typical human. An individual can stand from 5 feet to a little over 6 feet tall and weigh from 125 to 250 pounds. Human skin shades range from nearly black to very pale, and hair colors from black to blond (curly, kinky, or straight); males might sport facial hair that is sparse or thick. A lot of humans have a dash of nonhuman blood, revealing hints of elf, orc, or other lineages. Humans reach adulthood in their late teens and rarely live even a single century.</p>
+
+<h4>VARIETY IN ALL THINGS</h4>
+
+<p>Humans are the most adaptable and ambitious people among the common races. They have widely varying tastes, morals, and customs in the many different lands where they have settled. When they settle, though, they stay: they build cities to last for the ages, and great kingdoms that can persist for long centuries. An individual human might have a relatively short life span, but a human nation or culture preserves traditions with origins far beyond the reach of any single human’s memory. They live fully in the present—making them well suited to the adventuring life—but also plan for the future, striving to leave a lasting legacy. Individually and as a group, humans are adaptable opportunists, and they stay alert to changing political and social dynamics.</p>
+
+<h4>LASTING INSTITUTIONS</h4>
+
+<p>Where a single elf or dwarf might take on the responsibility of guarding a special location or a powerful secret, humans found sacred orders and institutions for such purposes. While dwarf clans and halfling elders pass on the ancient traditions to each new generation, human temples, governments, libraries, and codes of law fix their traditions in the bedrock of history. Humans dream of immortality, but (except for those few who seek undeath or divine ascension to escape death’s clutches) they achieve it by ensuring that they will be remembered when they are gone.</p>
+
+<p class="indent">Although some humans can be xenophobic, in general their societies are inclusive. Human lands welcome large numbers of nonhumans compared to the proportion of humans who live in nonhuman lands.</p>
+
+<h4>EXEMPLARS OF AMBITION</h4>
+
+<p>Humans who seek adventure are the most daring and ambitious members of a daring and ambitious race. They seek to earn glory in the eyes of their fellows by amassing power, wealth, and fame. More than other people, humans champion causes rather than territories or groups.</p>
+
+<h4>HUMAN NAMES AND ETHNICITIES</h4>
+
+<p>Having so much more variety than other cultures, humans as a whole have no typical names. Some human parents give their children names from other languages, such as Dwarvish or Elvish (pronounced more or less correctly), but most parents give names that are linked to their region’s culture or to the naming traditions of their ancestors.</p>
+
+<p class="indent">The material culture and physical characteristics of humans can change wildly from region to region. In the Forgotten Realms, for example, the clothing, architecture, cuisine, music, and literature are different in the northwestern lands of the Silver Marches than in distant Turmish or Impiltur to the east—and even more distinctive in far-off Kara-Tur. Human physical characteristics, though, vary according to the ancient migrations of the earliest humans, so that the humans of the Silver Marches have every possible variation of coloration and features.</p>
+
+<h4>HUMAN TRAITS</h4>
+
+<p>It’s hard to make generalizations about humans, but your human character has these traits.</p>
+
+
+-<p>
+
+<span class="feature">Ability Score Increase.</span>
+Your ability scores each increase by 1.
+<br/>
+
+<span class="feature">Age.</span>
+You do not age. After travelling world through world, you have not aged since leaving your home world.
+<br/>
+
+<span class="feature">Alignment.</span>
+Humans tend toward no particular alignment. The best and the worst are found among them.
+<br/>
+
+<span class="feature">Size.</span>
+Humans vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium.
+<br/>
+
+<span class="feature">Speed.</span>
+Your base walking speed is 30 feet.
+<br/>
+
+<span class="feature">Languages.</span>
+You can speak, read, and write Common and one extra language of your choice. Humans typically learn the languages of other peoples they deal with, including obscure dialects. They are fond of sprinkling their speech with words borrowed from other tongues: Orc curses, Elvish musical expressions, Dwarvish military phrases, and so on.
+<br/>
+
+<span class="feature">Plane Shift.</span>
+You focus your mind to be transported to a different plane of existence. You can specify a target destination in general terms, such as the City of Brass on the Elemental Plane of Fire or the palace of Dispater on the second level of the Nine Hells, and you appear in or near that destination. If you are trying to reach the City of Brass, for example, you might arrive in its Street of Steel, before its Gate of Ashes, or looking at the city from across the Sea of Fire, at the DM’s discretion.
+<br/>
+
+
+</p>
+
+<div element="ID_RACE_VARIANT_HUMAN_VARIANT"/>
+
+</description>
+
+<sheet display="false"/>
+
+
+-<setters>
+
+<set name="names" type="male">Ander, Blath, Bran, Frath, Geth, Lander, Luth, Malcer, Stor, Taman, Urth</set>
+
+<set name="names" type="female">Amafrey, Betha, Cefrey, Kethra, Mara, Olga, Silifrey, Westra</set>
+
+<set name="names" type="surname">Brightwood, Helder, Hornraven, Lackman, Stormwind, Windrivver</set>
+
+<set name="names-format">{{name}} {{surname}}</set>
+
+<set name="height" modifier="2d10">4'8"</set>
+
+<set name="weight" modifier="2d4">110 lb.</set>
+
+</setters>
+
+
+-<rules>
+
+<stat name="strength" requirements="!(ID_INTERNAL_GRANTS_REQTEMPFIX||ID_RACE_VARIANT_HUMAN_VARIANT||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED||ID_UA_PS_GRANTS_HUMAN_VARIANT)" value="1"/>
+
+<stat name="dexterity" requirements="!(ID_INTERNAL_GRANTS_REQTEMPFIX||ID_RACE_VARIANT_HUMAN_VARIANT||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED||ID_UA_PS_GRANTS_HUMAN_VARIANT)" value="1"/>
+
+<stat name="constitution" requirements="!(ID_INTERNAL_GRANTS_REQTEMPFIX||ID_RACE_VARIANT_HUMAN_VARIANT||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED||ID_UA_PS_GRANTS_HUMAN_VARIANT)" value="1"/>
+
+<stat name="intelligence" requirements="!(ID_INTERNAL_GRANTS_REQTEMPFIX||ID_RACE_VARIANT_HUMAN_VARIANT||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED||ID_UA_PS_GRANTS_HUMAN_VARIANT)" value="1"/>
+
+<stat name="wisdom" requirements="!(ID_INTERNAL_GRANTS_REQTEMPFIX||ID_RACE_VARIANT_HUMAN_VARIANT||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED||ID_UA_PS_GRANTS_HUMAN_VARIANT)" value="1"/>
+
+<stat name="charisma" requirements="!(ID_INTERNAL_GRANTS_REQTEMPFIX||ID_RACE_VARIANT_HUMAN_VARIANT||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED||ID_UA_PS_GRANTS_HUMAN_VARIANT)" value="1"/>
+
+<grant id="ID_SIZE_MEDIUM" type="Size"/>
+
+<stat name="innate speed" value="30" bonus="base"/>
+
+<grant id="ID_LANGUAGE_COMMON" type="Language"/>
+
+<select name="Language (Human)" type="Language" requirements="!ID_UA_PS_GRANTS_HUMAN_VARIANT,!ID_WOTC_ERLW_DRAGONMARK_MARK_OF_FINDING" supports="Standard||Exotic"/>
+
+<select name="Human Variant" type="Race Variant" supports="Human" optional="true"/>
+
+</rules>
+
+</element>
+
+
+-<element name="Human Variant" id="ID_RACE_VARIANT_HUMAN_VARIANT" source="Player’s Handbook" type="Race Variant">
+
+<supports>Human</supports>
+
+<requirements>ID_INTERNAL_OPTION_ALLOW_FEATS</requirements>
+
+
+-<description>
+
+<p>If your campaign uses the optional feat rules from the Player’s Handbook, your Dungeon Master might allow these variant traits, all of which replace the human’s Ability Score Increase trait.</p>
+
+
+-<p>
+
+<span class="feature">Ability Score Increase.</span>
+Two different ability scores of your choice increase by 1.
+<br/>
+
+<span class="feature">Skills.</span>
+You gain proficiency in one skill of your choice.
+<br/>
+
+<span class="feature">Feat.</span>
+You gain one feat of your choice.
+<br/>
+
+</p>
+
+</description>
+
+<sheet display="false" alt="Human"/>
+
+
+-<rules>
+
+<select name="Ability Score Increase (Human Variant)" type="Racial Trait" supports="Human Variant" number="2"/>
+
+<select name="Skill Proficiency (Human Variant)" type="Proficiency" supports="Skill"/>
+
+<select name="Feat (Human Variant)" type="Feat"/>
+
+</rules>
+
+</element>
+
+<!--temp fix, todo: undo in next release -->
+
+
+<element name="Req Temp Fix" id="ID_INTERNAL_GRANTS_REQTEMPFIX" source="Internal" type="Grants"/>
+
+
+-<append id="ID_RACE_VARIANT_HUMAN_VARIANT">
+
+
+-<rules>
+
+<grant id="ID_INTERNAL_GRANTS_REQTEMPFIX" type="Grants"/>
+
+</rules>
+
+</append>
+
+<!--/temp-fix-->
+
+
+<!--Human Variant Ability Score Increase-->
+
+
+
+-<element name="Ability Score Increase (Strength)" id="ID_RACE_VARIANT_HUMAN_VARIANT_STRENGTH" source="Player’s Handbook" type="Racial Trait">
+
+<compendium display="false"/>
+
+<supports>Human Variant</supports>
+
+
+-<description>
+
+<p>Your Strength score increases by 1.</p>
+
+</description>
+
+<sheet display="false"/>
+
+
+-<rules>
+
+<stat name="strength" value="1" alt="Human Variant"/>
+
+</rules>
+
+</element>
+
+
+-<element name="Ability Score Increase (Dexterity)" id="ID_RACE_VARIANT_HUMAN_VARIANT_DEXTERITY" source="Player’s Handbook" type="Racial Trait">
+
+<compendium display="false"/>
+
+<supports>Human Variant</supports>
+
+
+-<description>
+
+<p>Your Dexterity score increases by 1.</p>
+
+</description>
+
+<sheet display="false"/>
+
+
+-<rules>
+
+<stat name="dexterity" value="1" alt="Human Variant"/>
+
+</rules>
+
+</element>
+
+
+-<element name="Ability Score Increase (Constitution)" id="ID_RACE_VARIANT_HUMAN_VARIANT_CONSTITUTION" source="Player’s Handbook" type="Racial Trait">
+
+<compendium display="false"/>
+
+<supports>Human Variant</supports>
+
+
+-<description>
+
+<p>Your Constitution score increases by 1.</p>
+
+</description>
+
+<sheet display="false"/>
+
+
+-<rules>
+
+<stat name="constitution" value="1" alt="Human Variant"/>
+
+</rules>
+
+</element>
+
+
+-<element name="Ability Score Increase (Intelligence)" id="ID_RACE_VARIANT_HUMAN_VARIANT_INTELLIGENCE" source="Player’s Handbook" type="Racial Trait">
+
+<compendium display="false"/>
+
+<supports>Human Variant</supports>
+
+
+-<description>
+
+<p>Your Intelligence score increases by 1.</p>
+
+</description>
+
+<sheet display="false"/>
+
+
+-<rules>
+
+<stat name="intelligence" value="1" alt="Human Variant"/>
+
+</rules>
+
+</element>
+
+
+-<element name="Ability Score Increase (Wisdom)" id="ID_RACE_VARIANT_HUMAN_VARIANT_WISDOM" source="Player’s Handbook" type="Racial Trait">
+
+<compendium display="false"/>
+
+<supports>Human Variant</supports>
+
+
+-<description>
+
+<p>Your Wisdom score increases by 1.</p>
+
+</description>
+
+<sheet display="false"/>
+
+
+-<rules>
+
+<stat name="wisdom" value="1" alt="Human Variant"/>
+
+</rules>
+
+</element>
+
+
+-<element name="Ability Score Increase (Charisma)" id="ID_RACE_VARIANT_HUMAN_VARIANT_CHARISMA" source="Player’s Handbook" type="Racial Trait">
+
+<compendium display="false"/>
+
+<supports>Human Variant</supports>
+
+
+-<description>
+
+<p>Your Charisma score increases by 1.</p>
+
+</description>
+
+<sheet display="false"/>
+
+
+-<rules>
+
+<stat name="charisma" value="1" alt="Human Variant"/>
+
+</rules>
+
+</element>
+
+</elements
