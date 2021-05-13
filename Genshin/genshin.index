@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Genshin</name>
+		<description>A plan to turn Genshin characters into D&D characters</description>
+		<author>Emily Yang</author>
+		<update version="0.1">
+			<file name="players-handbook.index" url="https://raw.githubusercontent.com/Astellle/elements/master/user/Genshin/genshin.index" />
+		</update>
+	</info>
+	<files>	
+		<file name="source.xml" url="https://raw.githubusercontent.com/Astellle/elements/master/user/Genshin/source.index" />
+		
+		<!-- races -->
+		<file name="human-traveler.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/user/Genshin/Races/human-traveler.xml" />
+
+
+		<!-- classes -->
+
+
+		<!-- backgrounds -->		
+
+
+		<!-- items -->
+
+
+		<!-- misc -->
+
+	</files>
+</index>
