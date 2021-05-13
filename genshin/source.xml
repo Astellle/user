@@ -15,7 +15,7 @@
 			<set name="image">https://i.pinimg.com/736x/dd/2d/35/dd2d358e6e5648ef772db8278ce32442.jpg</set>
 			<set name="errata">https://media.wizards.com/2020/dnd/downloads/PH-Errata.pdf</set>
 			<set name="author" abbreviation="EMILY">Emily Yang</set>
-			<set name="false">true</set>
+			<set name="official">false</set>
 			<set name="core">false</set>
 		</setters>
 	</element>
