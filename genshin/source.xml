@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.0.1">
-			<file name="sources.xml" url="https://raw.githubusercontent.com/Astellle/user/master/Genshin/source.xml" />
+			<file name="sources.xml" url="https://raw.githubusercontent.com/Astellle/user/master/genshin/source.xml" />
 		</update>
 	</info>
 	<element name="Genshin" type="Source" id="ID_EMILY_SOURCE_GENSHIN">
