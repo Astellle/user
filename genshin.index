@@ -3,7 +3,7 @@
 	<info>
 		<name>Genshin</name>
 		<author>Emily Yang</author>
-		<update version="0.1">
+		<update version="0.2">
 			<file name="genshin.index" url="https://raw.githubusercontent.com/Astellle/user/master/genshin.index" />
 		</update>
 	</info>
