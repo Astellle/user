@@ -3,7 +3,7 @@
 	<info>
 		<name>Investigator</name>
 		<update version="1.0.0">
-			<file name="otter.xml" url="https://raw.githubusercontent.com/Astellle/user/master/campaign/background-investigator.xml" />
+			<file name="background-investigator.xml" url="https://raw.githubusercontent.com/Astellle/user/master/campaign/background-investigator.xml" />
 		</update>
 	</info>
   <element name="Investigator" type="Background" source="5e Homebrew" id="ID_HOME_BACKGROUND_INVESTIGATOR">
