@@ -9,5 +9,6 @@
 	<files>
 		<file name="ratfolk.xml" url="https://raw.githubusercontent.com/Astellle/user/master/campaign/ratfolk.xml" />
 		<file name="otter.xml" url="https://raw.githubusercontent.com/Astellle/user/master/campaign/otterfolk.xml" />
+		<file name="background-investigator.xml" url="https://raw.githubusercontent.com/Astellle/user/master/campaign/background-investigator.xml" />
 	</files>
 </index>
