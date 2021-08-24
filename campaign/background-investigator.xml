@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Investigator</name>
+		<update version="1.0.0">
+			<file name="otter.xml" url="https://raw.githubusercontent.com/Astellle/user/master/campaign/background-investigator.xml" />
+		</update>
+	</info>
+  <element name="Investigator" type="Background" source="5e Homebrew" id="ID_HOME_BACKGROUND_INVESTIGATOR">
+        <description>
+            <p>Investigators are all concerned with the mysteries of the world. Whether those mysteries infest their own lives, or are simply around them, is a part of history.</p>
+            <p class="indent">Though you hold no special title or position, you are an inveterate seeker of truths. To this end, you find yourself compelled to search in dangerous locations, and are the first to broach understanding or gather clandestine pieces of information. These traits can bring you to intense danger, but they do not hinder their quest for knowledge.</p>
+			            <ul class="unstyled">
+                      <li><strong>Skill Proficiencies:</strong> Insight, Investigation, or Perception.</li>
+                      <li><strong>Tool Proficiencies:</strong> Disguise Kit and Thieves Tools</li>
+                      <li><strong>Equipment:</strong>A magnifying glass, a trinket from a case, a set of common clothes, and 10 gold.</li>
+			            </ul>
+            <div element="ID_HOME_BACKGROUND_FEATURE_INVESTIGATOR_OFFICIAL_INQUIRY" />
+            <h5>SUGGESTED CHARACTERISTICS</h5>
+            <p>As an investigator, you do things that others wouldn’t do and know things that others wouldn’t think to consider. There are many traits that may exemplify an investigator, but normal would not be prominent among them.</p>
+        </description>
+    <setters>
+
+      <set name="short">Insight, Investigation, Perception, Thieves’ Tools, Disguise Kit</set>
+
+    </setters>
+        <rules>
+            <select name="Personality Trait" type="List" number="2">
+
+            <item id="1">I can’t stop asking questions!</item>
+
+            <item id="2">I have amazing powers of deduction, and I leave no clue uninspected.</item>
+
+            <item id="3">I require silence to do my work. I detest noise.</item>
+
+            <item id="4">My art is as important as my investigation, and I often paint what I find.</item>
+
+            <item id="5">The truth does not come to those who wait. I must seek it regardless of the cost.</item>
+
+            <item id="6">The darkness is my friend, and I feel lonely without it.</item>
+
+            <item id="7">	I am only at ease when investigating. Sitting still for too long is unsettling.</item>
+
+            <item id="8">	Investigation comes easy to me, and it bores me, but I am too good at it to stop.</item>
+
+            </select>
+
+
+            <select name="Ideal" type="List">
+
+            <item id="1">Duty. The work of investigation is too important to abandon. (Lawful)</item>
+
+            <item id="2">Revenge. Information is power, and it can bring enemies to their knees. (Any)</item>
+
+            <item id="3">Charity. The truth is beautiful. The darkness can only be dispelled with light. (Good)</item>
+
+            <item id="4">Anarchy. Oppressive forces cannot keep the truth from surfacing. (Chaotic)</item>
+
+            <item id="5">	Creativity. The compulsion to learn about the world is strong, and I cannot resist its call. (Chaotic)</item>
+
+            <item id="6">Tradition. Obligation supersedes many things, including fear of the unknown. (Lawful)</item>
+
+            </select>
+
+
+            <select name="Bond" type="List">
+
+            <item id="1">I have a fellow investigator with whom I trade information. I seldom see them, but our bond is deep.</item>
+
+            <item id="2">My family does not like my work, but they love me, and I, them.</item>
+
+            <item id="3">My loyalty is to my kingdom, and my fealty drives me to discover things to help keep it safe.</item>
+
+            <item id="4">I love my benefactor, and do everything for them, even if they were not of a higher station.</item>
+
+            <item id="5">	A lead is valuable, and I will chase it until I can crack it, or discern it as false.</item>
+
+            <item id="6">My memories will outlive my descendants if I can live to complete them.</item>
+
+            </select>
+
+
+            <select name="Flaw" type="List">
+
+            <item id="1">I trust no one unless they have thoroughly proven themselves.</item>
+
+            <item id="2">I speak in a strange affectation, sometimes peppering in odd phrases or exotic languages.</item>
+
+            <item id="3">I dress and live like a peasant. I would never want to stand out.</item>
+
+            <item id="4">I communicate through writing more often than speech, and I often use ciphers.</item>
+
+            <item id="5">	For me, no topic or knowledge is off limits.</item>
+
+            <item id="6">I dislike sleeping indoors.</item>
+
+            </select>
+          
+            <select name="Skill Proficiency, Investigator" type="Proficiency" number="2" supports="ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_INSIGHT"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" />          
+            <grant type="Background Feature" id="ID_HOME_BACKGROUND_FEATURE_INVESTIGATOR_OFFICIAL_INQUIRY" />
+        </rules>
+    </element>
+    <element name="Feature: Official Inquiry" id="ID_HOME_BACKGROUND_FEATURE_INVESTIGATOR_OFFICIAL_INQUIRY" source="5e Homebrew" type="Background Feature">
+
+
+<description>
+
+      <p>You can gain access to a place or individual if you’re investigating them as part of a crime. Those who aren’t involved in the investigation get out of your way or even help you out. Authority either loves or hates you.</p>
+      <p class="indent">This feature must be used with caution, for not all who know the ballad are your friends. Some are traitors, counterspies, or agents of tyranny.</p>
+            <h4>FIRST CASE</h4>
+            <p>All Investigators have their start somewhere. You might still be investigating your first case, or it’s far behind your career. Either way, this table might spark some inspiration concerning your characters’ curious nature. Or, you can just choose one straight-up; these are some great sounding cases!</p>
+  <table>
+
+
+<thead>
+
+
+<tr>
+
+<td>d8</td>
+
+<td>First Case Options</td>
+
+</tr>
+
+</thead>
+
+
+-<tr>
+
+<td>1</td>
+
+<td>A friend was wrongfully accused of murder. You tracked down the actual killer, proving your friend’s innocence and starting your career as a detective.</td>
+
+</tr>
+
+
+<tr>
+
+<td>2</td>
+
+<td>You’re told you went missing for weeks. When you were found, you had no memory of being gone. Now you search to discover what happened to you.</td>
+
+</tr>
+
+
+<tr>
+
+<td>3</td>
+
+<td>You helped a spirit find peace by finding its missing corpse. Ever since, other spectral clients have sought you out to help them find rest.</td>
+
+</tr>
+
+
+<tr>
+
+<td>4</td>
+
+<td>You helped a spirit find peace by finding its missing corpse. Ever since, other spectral clients have sought you out to help them find rest.</td>
+
+</tr>
+
+
+<tr>
+
+<td>5</td>
+
+<td>You were wrongfully accused and convicted of a crime. You managed to escape and seek to help others avoid the experience you suffered, even while still being pursued by the law.</td>
+
+</tr>
+
+
+<tr>
+
+<td>6</td>
+
+<td>You survived the destructive use of a magic device that wiped out your home. Members of a secret organization found you. You now work with them, tracking down dangerous supernatural phenomena and preventing them from doing harm.</td>
+
+</tr>
+    
+    <tr>
+
+<td>7</td>
+
+<td>You found evidence of a conspiracy underpinning society. You tried to expose this mysterious cabal, but no one believed you. You’re still trying to prove what you know is true.</td>
+
+</tr>
+    
+    <tr>
+
+<td>8</td>
+
+<td>You got a job with an agency that investigates crimes that local law enforcement can’t solve. You often wonder which you value more, the truth or your pay.</td>
+
+</tr>
+
+</table>
+</description>
+
+<sheet alt="Official Inquiry"/>
+
+</element>
+</elements>
