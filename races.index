@@ -7,6 +7,6 @@
 		</update>
 	</info>
 	<files>
-		<file name="reborn-fixed.xml" url="https://raw.githubusercontent.com/Astellle/user/master/races/reborn-fixed.xml" />
+		<file name="reborn-fixed.xml" url="https://raw.githubusercontent.com/Astellle/user/master/races/reborn.xml" />
 	</files>
 </index>
