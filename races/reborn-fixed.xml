@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		
 		<name>Reborn</name>
 		<update version="1.0.0">
 			<file name="race-reborn.xml" url="https://raw.githubusercontent.com/Astellle/user/master/races/reborn-fixed.xml" />
